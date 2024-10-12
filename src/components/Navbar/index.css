@@ -12,6 +12,7 @@
     left: 0;
     width: 100%;
     padding: 10px 100px;
+    
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
@@ -41,6 +42,7 @@
   .logo-image{
     height: 50px;
     width: 50px;
+    opacity: 1;
   }
   .logo {
     color: #fff;
@@ -53,24 +55,30 @@
     justify-content: flex-start;
     align-items: center;
   }
+  .menu-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
   .navbar a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
-    margin-left: 35px;
+    margin-left: 27px;
     transition: 0.3s;
   }
   .navbar a:hover {
-    color: rgb(219, 100, 207);
+    color: #0000FF;
   }
   #menu-icon {
     font-size: 36px;
     color: #fff;
     display: none;
   }
+  
   @media (max-width: 992px) {
     .header {
-      padding: 1.25rem 4%;
+      padding: 0.6rem 4%;
     }
   }
   @media (max-width: 768px) {
@@ -82,7 +90,7 @@
       top: 100%;
       left: 0;
       width: 100%;
-      padding: 0.5rem 4%;
+      padding: 0.4rem 4%;
       display: none;
     }
     .navbar.active {

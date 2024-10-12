@@ -165,13 +165,55 @@
     background-color: #0000FF;
     color: white;
  }
- .login__register {
+ .login__register1 {
    text-align: center;
+   display: block;
  }
  .login__register a {
    color: var(--white-color);
    font-weight: var(--font-medium);
    
+ }
+ .login__button--top-right-text {
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+  color: white; 
+  margin-right: 90px;
+  margin-top: 13px;
+  
+}
+ .login__button--top-right {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  background-color: #0000FF;
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 15px; 
+  cursor: pointer; 
+}
+.hide-on-small {
+  display: block; 
+}
+
+@media (max-width: 768px) { 
+  .hide-on-small {
+    display: none; 
+  }
+}
+
+.login__button--bottom {
+  margin-top: 20px; 
+}
+
+.login__button--top-right:hover {
+  background-color: #0000FF;
+}
+ .error{
+
+  color: red;
  }
  .login__register a:hover {
    text-decoration: underline;
@@ -201,5 +243,8 @@
    }
    .login__title {
      font-size: 2rem;
+   }
+   .login__register1{
+    display: none;
    }
  }
