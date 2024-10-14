@@ -38,13 +38,7 @@
    text-decoration: none;
  }
  
- img {
-   max-width: 100%;
-   height: auto;
-   background-position: center;
-   background-size: cover;
-   opacity: 0.3;
- }
+
  
  .login {
    position: relative;
@@ -58,6 +52,11 @@
    height: 100%;
    object-fit: cover;
    object-position: center;
+   max-width: 100%;
+   height: auto;
+   background-position: center;
+   background-size: cover;
+   opacity: 0.3;
  }
  .login__form {
    position: relative;

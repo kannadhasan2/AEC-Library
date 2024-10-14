@@ -51,6 +51,34 @@
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     animation: pulse 2s infinite, glow 1.5s ease-in-out infinite alternate; 
   }
+  @keyframes typeWriter {
+    0% { width: 0; }
+    70% { width: 100%; } 
+    85% { width: 100%; } 
+    100% { width: 0; } 
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-right-color: rgba(0, 0, 0, 0); }
+    50% { border-right-color: black; }
+  }
+  
+  .home-main-heading {
+    font-size: 44px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typeWriter 5s steps(40, end) infinite, blink 0.75s step-end infinite;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-main-heading {
+      font-size: 32px;
+      animation: typeWriter 5s steps(30, end) infinite, blink 0.75s step-end infinite;
+    }
+  }
   
  
   .home-main-button:hover {

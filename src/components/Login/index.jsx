@@ -21,6 +21,7 @@ const Login = () => {
     const submitForm = async (event) => {
         event.preventDefault();
         
+        
         if (registerNo.startsWith("5104")) {
             if (registerNo.length === 12) {
                 if (dateOfBirth.length === 10) {
@@ -38,9 +39,8 @@ const Login = () => {
                     console.log(data)
                     if (response.ok) {
                         const jwtToken = data.jwt_token;
-                        console.log(jwtToken)
                         Cookies.set("jwtToken", jwtToken, { expires: 30 });
-                        navigate("/"); 
+                        navigate("/",{replace:true}); 
                     } else {
                         setRegisterNoError(data.error_msg);
                     }
